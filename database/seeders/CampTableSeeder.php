@@ -34,11 +34,11 @@ class CampTableSeeder extends Seeder
         ];
 
         // 1st method
-        // foreach ($camps as $key => $camp) {
-        //     Camp::create($camp);
-        //  }
+        foreach ($camps as $key => $camp) {
+             Camp::create($camp);
+          }
 
         // 2nd method
-        Camp::insert($camps);
+        // Camp::insert($camps);
     }
 }
